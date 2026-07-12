@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regex Tester — FreeToolsHub</title>
+  <meta name="description" content="Test regular expressions against sample text with live match highlighting." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Regex Tester</h1>
+      <p>Write a pattern, pick flags, and see matches highlighted live.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="row">
+          <div class="field" style="flex:2 1 260px;">
+            <label for="rx-pattern">Pattern</label>
+            <input id="rx-pattern" class="input" type="text" placeholder="e.g. \b[A-Z][a-z]+\b" />
+          </div>
+          <div class="field" style="flex:1 1 140px;">
+            <label for="rx-flags">Flags</label>
+            <input id="rx-flags" class="input" type="text" placeholder="g, i, m, s…" value="g" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rx-text">Test string</label>
+          <textarea id="rx-text" class="textarea" placeholder="Paste text to test against…" style="min-height:160px;"></textarea>
+        </div>
+
+        <div id="rx-error" class="error-box" hidden></div>
+
+        <div class="field">
+          <label>Highlighted result</label>
+          <div id="rx-highlight" class="result-box" style="white-space:pre-wrap;"></div>
+        </div>
+
+        <div class="field">
+          <label id="rx-count-label">Matches</label>
+          <div id="rx-matches" class="result-box" style="white-space:pre-wrap;"></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Markdown Previewer — FreeToolsHub</title>
+  <meta name="description" content="Write Markdown and see the rendered HTML update live, side by side." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+  <style>
+    .md-preview {
+      background: #fff; border: 1px solid var(--color-border); border-radius: 8px;
+      padding: 16px; min-height: 300px; overflow-wrap: break-word;
+    }
+    .md-preview h1, .md-preview h2, .md-preview h3 { color: var(--color-primary-dark); }
+    .md-preview code { background: #F1F7FB; padding: 2px 5px; border-radius: 4px; font-size: 0.9em; }
+    .md-preview pre { background: #F1F7FB; padding: 12px; border-radius: 8px; overflow-x: auto; }
+    .md-preview pre code { background: none; padding: 0; }
+    .md-preview blockquote { border-left: 3px solid var(--color-primary-light); margin: 0; padding: 4px 14px; color: var(--color-text-muted); }
+    .md-preview a { color: var(--color-accent); }
+    .md-split { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 760px) { .md-split { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Markdown Previewer</h1>
+      <p>Type Markdown on the left, see the rendered result on the right — updates as you type.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel" style="grid-column: 1 / -1;">
+        <div class="md-split">
+          <div class="field" style="margin-bottom:0;">
+            <label for="md-input">Markdown</label>
+            <textarea id="md-input" class="textarea" style="min-height:340px;"># Hello world
+
+Start typing **Markdown** here and watch the preview update.
+
+- Item one
+- Item two
+
+> A blockquote
+
+`inline code` and a [link](https://example.com)</textarea>
+          </div>
+          <div class="field" style="margin-bottom:0;">
+            <label>Preview</label>
+            <div id="md-preview" class="md-preview"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

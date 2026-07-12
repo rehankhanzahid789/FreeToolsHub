@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Age Calculator — FreeToolsHub</title>
+  <meta name="description" content="Calculate your exact age in years, months and days, plus days until your next birthday." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Age Calculator</h1>
+      <p>Find your exact age, total days lived, and time until your next birthday.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="row">
+          <div class="field">
+            <label for="age-dob">Date of birth</label>
+            <input id="age-dob" class="input" type="date" />
+          </div>
+          <div class="field">
+            <label for="age-asof">As of date</label>
+            <input id="age-asof" class="input" type="date" />
+          </div>
+        </div>
+
+        <div id="age-error" class="error-box" hidden></div>
+
+        <div class="stat-grid">
+          <div class="stat"><div id="age-years" class="stat__value">—</div><div class="stat__label">Years</div></div>
+          <div class="stat"><div id="age-months" class="stat__value">—</div><div class="stat__label">Months</div></div>
+          <div class="stat"><div id="age-days" class="stat__value">—</div><div class="stat__label">Days</div></div>
+          <div class="stat"><div id="age-total-days" class="stat__value">—</div><div class="stat__label">Total days lived</div></div>
+          <div class="stat"><div id="age-next" class="stat__value">—</div><div class="stat__label">Days to next birthday</div></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

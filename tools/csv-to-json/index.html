@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSV to JSON Converter — FreeToolsHub</title>
+  <meta name="description" content="Convert CSV data to JSON instantly, right in your browser." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>CSV to JSON Converter</h1>
+      <p>Paste CSV data with a header row and convert it to a JSON array of objects.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel" style="grid-column: 1 / -1;">
+        <div class="row">
+          <div class="field">
+            <label for="cj-input">CSV</label>
+            <textarea id="cj-input" class="textarea" style="min-height:240px;" placeholder="name,age,city
+Alice,30,Boston
+Bob,25,Denver"></textarea>
+          </div>
+          <div class="field">
+            <label for="cj-output">JSON</label>
+            <textarea id="cj-output" class="textarea" style="min-height:240px;" readonly></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field" style="flex:1 1 200px;">
+            <label for="cj-delimiter">Delimiter</label>
+            <select id="cj-delimiter" class="select">
+              <option value=",">Comma (,)</option>
+              <option value=";">Semicolon (;)</option>
+              <option value="\t">Tab</option>
+            </select>
+          </div>
+        </div>
+        <div id="cj-error" class="error-box" hidden></div>
+        <div class="actions">
+          <button id="cj-convert" class="btn btn-accent" type="button">Convert</button>
+          <button id="cj-copy" class="btn btn-outline" type="button">Copy JSON</button>
+          <button id="cj-download" class="btn btn-outline" type="button">Download .json</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

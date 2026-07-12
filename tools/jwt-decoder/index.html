@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JWT Decoder — FreeToolsHub</title>
+  <meta name="description" content="Decode a JSON Web Token's header and payload instantly, entirely in your browser." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>JWT Decoder</h1>
+      <p>Paste a JSON Web Token to decode its header and payload. Nothing is sent anywhere — this runs entirely in your browser.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="jwt-input">JWT</label>
+          <textarea id="jwt-input" class="textarea" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9…" style="min-height:110px;"></textarea>
+        </div>
+
+        <div id="jwt-error" class="error-box" hidden></div>
+
+        <div class="field">
+          <label>Header</label>
+          <div id="jwt-header" class="result-box" style="white-space:pre-wrap;">—</div>
+        </div>
+        <div class="field">
+          <label>Payload</label>
+          <div id="jwt-payload" class="result-box" style="white-space:pre-wrap;">—</div>
+        </div>
+        <div class="field">
+          <label>Signature (raw, not verified)</label>
+          <div id="jwt-signature" class="result-box" style="word-break:break-all;">—</div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
