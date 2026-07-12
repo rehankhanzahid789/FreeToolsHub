@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rehankhanzahid789.github.io/FreeToolsHub/sitemap.xml
