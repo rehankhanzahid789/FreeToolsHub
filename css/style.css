@@ -65,9 +65,8 @@ img, svg { max-width: 100%; display: block; }
   font-size: 1.15rem;
 }
 .brand__mark {
-  width: 32px; height: 32px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  display: grid; place-items: center; color: #fff; font-weight: 800;
+  width: 34px; height: 34px; border-radius: 8px;
+  object-fit: contain; display: block;
 }
 .site-nav a {
   margin-left: 18px; font-weight: 500; color: var(--color-text-muted);

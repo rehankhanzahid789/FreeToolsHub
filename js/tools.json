@@ -1,22 +1,142 @@
 [
-  { "name": "QR Code Generator", "slug": "qr-generator", "description": "Generate downloadable QR codes from text or URLs.", "icon": "qr-generator.svg", "folder": "tools/qr-generator/" },
-  { "name": "QR Code Reader", "slug": "qr-reader", "description": "Decode QR codes from an image or your webcam.", "icon": "qr-reader.svg", "folder": "tools/qr-reader/" },
-  { "name": "Password Generator", "slug": "password-generator", "description": "Create strong, customizable passwords with a live strength meter.", "icon": "password-generator.svg", "folder": "tools/password-generator/" },
-  { "name": "Color Picker", "slug": "color-picker", "description": "Pick colors and copy HEX, RGB, or HSL values instantly.", "icon": "color-picker.svg", "folder": "tools/color-picker/" },
-  { "name": "Unit Converter", "slug": "unit-converter", "description": "Convert length, weight, and temperature units.", "icon": "unit-converter.svg", "folder": "tools/unit-converter/" },
-  { "name": "Timezone Converter", "slug": "timezone-converter", "description": "See a time across multiple timezones side by side.", "icon": "timezone-converter.svg", "folder": "tools/timezone-converter/" },
-  { "name": "Word Counter", "slug": "word-counter", "description": "Live word, character, sentence and reading-time counts.", "icon": "word-counter.svg", "folder": "tools/word-counter/" },
-  { "name": "Base64 Encoder/Decoder", "slug": "base64-tool", "description": "Encode or decode text with Base64.", "icon": "base64-tool.svg", "folder": "tools/base64-tool/" },
-  { "name": "JSON Formatter", "slug": "json-formatter", "description": "Pretty-print and validate JSON with error highlighting.", "icon": "json-formatter.svg", "folder": "tools/json-formatter/" },
-  { "name": "Case Converter", "slug": "case-converter", "description": "Convert text between UPPER, lower, Title, camel and snake case.", "icon": "case-converter.svg", "folder": "tools/case-converter/" },
-  { "name": "Hash Generator", "slug": "hash-generator", "description": "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from text.", "icon": "hash-generator.svg", "folder": "tools/hash-generator/" },
-  { "name": "Regex Tester", "slug": "regex-tester", "description": "Test regular expressions with live match highlighting.", "icon": "regex-tester.svg", "folder": "tools/regex-tester/" },
-  { "name": "Markdown Previewer", "slug": "markdown-previewer", "description": "Write Markdown and preview the rendered HTML live.", "icon": "markdown-previewer.svg", "folder": "tools/markdown-previewer/" },
-  { "name": "Text Diff Checker", "slug": "text-diff-checker", "description": "Compare two blocks of text with line-by-line highlighting.", "icon": "text-diff-checker.svg", "folder": "tools/text-diff-checker/" },
-  { "name": "Lorem Ipsum Generator", "slug": "lorem-ipsum-generator", "description": "Generate placeholder text as paragraphs, sentences or words.", "icon": "lorem-ipsum-generator.svg", "folder": "tools/lorem-ipsum-generator/" },
-  { "name": "URL Encoder / Decoder", "slug": "url-encoder", "description": "Encode or decode URLs and query strings instantly.", "icon": "url-encoder.svg", "folder": "tools/url-encoder/" },
-  { "name": "JWT Decoder", "slug": "jwt-decoder", "description": "Decode a JSON Web Token's header and payload.", "icon": "jwt-decoder.svg", "folder": "tools/jwt-decoder/" },
-  { "name": "UUID Generator", "slug": "uuid-generator", "description": "Generate random UUID v4 identifiers, one or many at a time.", "icon": "uuid-generator.svg", "folder": "tools/uuid-generator/" },
-  { "name": "CSV to JSON Converter", "slug": "csv-to-json", "description": "Convert CSV data with a header row into a JSON array.", "icon": "csv-to-json.svg", "folder": "tools/csv-to-json/" },
-  { "name": "Age Calculator", "slug": "age-calculator", "description": "Calculate exact age in years, months and days.", "icon": "age-calculator.svg", "folder": "tools/age-calculator/" }
+  {
+    "name": "Age Calculator",
+    "slug": "age-calculator",
+    "description": "Calculate exact age in years, months and days.",
+    "icon": "age-calculator.svg",
+    "folder": "tools/age-calculator/"
+  },
+  {
+    "name": "Base64 Encoder/Decoder",
+    "slug": "base64-tool",
+    "description": "Encode or decode text with Base64.",
+    "icon": "base64-tool.svg",
+    "folder": "tools/base64-tool/"
+  },
+  {
+    "name": "Case Converter",
+    "slug": "case-converter",
+    "description": "Convert text between UPPER, lower, Title, camel and snake case.",
+    "icon": "case-converter.svg",
+    "folder": "tools/case-converter/"
+  },
+  {
+    "name": "Color Picker",
+    "slug": "color-picker",
+    "description": "Pick colors and copy HEX, RGB, or HSL values instantly.",
+    "icon": "color-picker.svg",
+    "folder": "tools/color-picker/"
+  },
+  {
+    "name": "CSV to JSON Converter",
+    "slug": "csv-to-json",
+    "description": "Convert CSV data with a header row into a JSON array.",
+    "icon": "csv-to-json.svg",
+    "folder": "tools/csv-to-json/"
+  },
+  {
+    "name": "Hash Generator",
+    "slug": "hash-generator",
+    "description": "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from text.",
+    "icon": "hash-generator.svg",
+    "folder": "tools/hash-generator/"
+  },
+  {
+    "name": "JSON Formatter",
+    "slug": "json-formatter",
+    "description": "Pretty-print and validate JSON with error highlighting.",
+    "icon": "json-formatter.svg",
+    "folder": "tools/json-formatter/"
+  },
+  {
+    "name": "JWT Decoder",
+    "slug": "jwt-decoder",
+    "description": "Decode a JSON Web Token's header and payload.",
+    "icon": "jwt-decoder.svg",
+    "folder": "tools/jwt-decoder/"
+  },
+  {
+    "name": "Lorem Ipsum Generator",
+    "slug": "lorem-ipsum-generator",
+    "description": "Generate placeholder text as paragraphs, sentences or words.",
+    "icon": "lorem-ipsum-generator.svg",
+    "folder": "tools/lorem-ipsum-generator/"
+  },
+  {
+    "name": "Markdown Previewer",
+    "slug": "markdown-previewer",
+    "description": "Write Markdown and preview the rendered HTML live.",
+    "icon": "markdown-previewer.svg",
+    "folder": "tools/markdown-previewer/"
+  },
+  {
+    "name": "Password Generator",
+    "slug": "password-generator",
+    "description": "Create strong, customizable passwords with a live strength meter.",
+    "icon": "password-generator.svg",
+    "folder": "tools/password-generator/"
+  },
+  {
+    "name": "QR Code Generator",
+    "slug": "qr-generator",
+    "description": "Generate downloadable QR codes from text or URLs.",
+    "icon": "qr-generator.svg",
+    "folder": "tools/qr-generator/"
+  },
+  {
+    "name": "QR Code Reader",
+    "slug": "qr-reader",
+    "description": "Decode QR codes from an image or your webcam.",
+    "icon": "qr-reader.svg",
+    "folder": "tools/qr-reader/"
+  },
+  {
+    "name": "Regex Tester",
+    "slug": "regex-tester",
+    "description": "Test regular expressions with live match highlighting.",
+    "icon": "regex-tester.svg",
+    "folder": "tools/regex-tester/"
+  },
+  {
+    "name": "Text Diff Checker",
+    "slug": "text-diff-checker",
+    "description": "Compare two blocks of text with line-by-line highlighting.",
+    "icon": "text-diff-checker.svg",
+    "folder": "tools/text-diff-checker/"
+  },
+  {
+    "name": "Timezone Converter",
+    "slug": "timezone-converter",
+    "description": "See a time across multiple timezones side by side.",
+    "icon": "timezone-converter.svg",
+    "folder": "tools/timezone-converter/"
+  },
+  {
+    "name": "Unit Converter",
+    "slug": "unit-converter",
+    "description": "Convert length, weight, and temperature units.",
+    "icon": "unit-converter.svg",
+    "folder": "tools/unit-converter/"
+  },
+  {
+    "name": "URL Encoder / Decoder",
+    "slug": "url-encoder",
+    "description": "Encode or decode URLs and query strings instantly.",
+    "icon": "url-encoder.svg",
+    "folder": "tools/url-encoder/"
+  },
+  {
+    "name": "UUID Generator",
+    "slug": "uuid-generator",
+    "description": "Generate random UUID v4 identifiers, one or many at a time.",
+    "icon": "uuid-generator.svg",
+    "folder": "tools/uuid-generator/"
+  },
+  {
+    "name": "Word Counter",
+    "slug": "word-counter",
+    "description": "Live word, character, sentence and reading-time counts.",
+    "icon": "word-counter.svg",
+    "folder": "tools/word-counter/"
+  }
 ]

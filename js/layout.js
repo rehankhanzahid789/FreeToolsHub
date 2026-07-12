@@ -9,13 +9,9 @@
     <header class="site-header">
       <div class="container site-header__inner">
         <a class="brand" href="${root}index.html">
-          <span class="brand__mark">F</span>
+          <img class="brand__mark" src="${root}assets/brand/logo-64.png" alt="FreeToolsHub logo" />
           <span>FreeToolsHub</span>
         </a>
-        <nav class="site-nav">
-          <a href="${root}index.html">All Tools</a>
-          <a href="${root}index.html#about">About</a>
-        </nav>
       </div>
     </header>
   `;

@@ -9,6 +9,8 @@
   try {
     const res = await fetch("js/tools.json", { cache: "no-cache" });
     tools = await res.json();
+    // Always keep tools in alphabetical order, regardless of how tools.json is ordered.
+    tools.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
   } catch (err) {
     grid.innerHTML = '<p class="empty-state">Could not load tools list.</p>';
     console.error(err);
