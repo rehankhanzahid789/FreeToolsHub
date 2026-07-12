@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JSON Formatter — FreeToolsHub</title>
+  <meta name="description" content="Pretty-print and validate JSON with clear error messages." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>JSON Formatter &amp; Validator</h1>
+      <p>Paste JSON to pretty-print it. Errors are highlighted with line info.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="json-input">JSON</label>
+          <textarea id="json-input" class="textarea" placeholder='{"hello":"world"}' style="min-height:200px;"></textarea>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="json-indent">Indent</label>
+            <select id="json-indent" class="select">
+              <option value="2">2 spaces</option>
+              <option value="4">4 spaces</option>
+              <option value="\t">Tab</option>
+            </select>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="json-format" class="btn btn-primary">Format</button>
+          <button id="json-minify" class="btn btn-outline">Minify</button>
+          <button id="json-copy" class="btn btn-accent">Copy result</button>
+        </div>
+        <div id="json-status"></div>
+        <div class="field" style="margin-top:14px;">
+          <label for="json-output">Result</label>
+          <textarea id="json-output" class="textarea" readonly style="min-height:200px;"></textarea>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

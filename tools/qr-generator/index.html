@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Code Generator — FreeToolsHub</title>
+  <meta name="description" content="Generate downloadable QR codes from any text or URL, right in your browser." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+  <script>
+    // qrcode@1.5.3 on jsDelivr has a known packaging bug (the browser build
+    // isn't shipped for that version), so we pin to 1.4.4 which is known-good.
+    // If that CDN is unreachable for any reason, we fall back to a second one.
+    window.__qrLibLoaded = false;
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.min.js"
+          onload="window.__qrLibLoaded = true;"
+          onerror="
+            var s = document.createElement('script');
+            s.src = 'https://unpkg.com/qrcode@1.4.4/build/qrcode.min.js';
+            s.onload = function () { window.__qrLibLoaded = true; };
+            document.head.appendChild(s);
+          "></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>QR Code Generator</h1>
+      <p>Type text or a URL and get a downloadable QR code instantly.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="qr-input">Text or URL</label>
+          <textarea id="qr-input" class="textarea" placeholder="https://example.com"></textarea>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="qr-size">Size (px)</label>
+            <input id="qr-size" class="input" type="number" min="128" max="1024" step="32" value="320" />
+          </div>
+          <div class="field">
+            <label for="qr-ec">Error correction</label>
+            <select id="qr-ec" class="select">
+              <option value="L">Low</option>
+              <option value="M" selected>Medium</option>
+              <option value="Q">Quartile</option>
+              <option value="H">High</option>
+            </select>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="qr-generate" class="btn btn-primary">Generate</button>
+          <button id="qr-download" class="btn btn-accent" disabled>Download PNG</button>
+        </div>
+        <div id="qr-output" style="margin-top:18px;text-align:center;"></div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

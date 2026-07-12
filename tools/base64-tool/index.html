@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Base64 Encoder / Decoder — FreeToolsHub</title>
+  <meta name="description" content="Encode text to Base64 or decode Base64 back to text." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Base64 Encoder / Decoder</h1>
+      <p>Toggle between encoding and decoding. UTF-8 safe.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="checkbox-row" style="margin-bottom:12px;">
+          <label><input type="radio" name="b64-mode" value="encode" checked /> Encode</label>
+          <label><input type="radio" name="b64-mode" value="decode" /> Decode</label>
+        </div>
+        <div class="field">
+          <label for="b64-input">Input</label>
+          <textarea id="b64-input" class="textarea" placeholder="Type or paste text…"></textarea>
+        </div>
+        <div class="field">
+          <label for="b64-output">Output</label>
+          <textarea id="b64-output" class="textarea" readonly></textarea>
+        </div>
+        <div class="actions">
+          <button id="b64-copy" class="btn btn-accent">Copy output</button>
+          <button id="b64-clear" class="btn btn-outline">Clear</button>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

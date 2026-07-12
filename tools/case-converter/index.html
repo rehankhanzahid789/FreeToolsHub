@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Converter — FreeToolsHub</title>
+  <meta name="description" content="Convert text between UPPER, lower, Title, camelCase, snake_case and more." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Case Converter</h1>
+      <p>Instantly convert text into different letter cases.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="cc-input">Text</label>
+          <textarea id="cc-input" class="textarea" placeholder="Type or paste text…"></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn btn-outline" data-case="upper">UPPERCASE</button>
+          <button class="btn btn-outline" data-case="lower">lowercase</button>
+          <button class="btn btn-outline" data-case="title">Title Case</button>
+          <button class="btn btn-outline" data-case="sentence">Sentence case</button>
+          <button class="btn btn-outline" data-case="camel">camelCase</button>
+          <button class="btn btn-outline" data-case="pascal">PascalCase</button>
+          <button class="btn btn-outline" data-case="snake">snake_case</button>
+          <button class="btn btn-outline" data-case="kebab">kebab-case</button>
+        </div>
+        <div class="field" style="margin-top:14px;">
+          <label for="cc-output">Result</label>
+          <textarea id="cc-output" class="textarea" readonly></textarea>
+        </div>
+        <div class="actions">
+          <button id="cc-copy" class="btn btn-accent">Copy result</button>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

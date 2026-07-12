@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Code Reader — FreeToolsHub</title>
+  <meta name="description" content="Decode QR codes from an uploaded image or your webcam." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+  <script>window.__jsQRLoaded = false;</script>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"
+          onload="window.__jsQRLoaded = true;"
+          onerror="
+            var s = document.createElement('script');
+            s.src = 'https://unpkg.com/jsqr@1.4.0/dist/jsQR.js';
+            s.onload = function () { window.__jsQRLoaded = true; };
+            document.head.appendChild(s);
+          "></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>QR Code Reader</h1>
+      <p>Upload an image containing a QR code, or use your webcam.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="qr-file">Upload image</label>
+          <input id="qr-file" class="input" type="file" accept="image/*" />
+        </div>
+        <div class="actions">
+          <button id="qr-cam-start" class="btn btn-primary">Use webcam</button>
+          <button id="qr-cam-stop" class="btn btn-outline" disabled>Stop webcam</button>
+        </div>
+        <video id="qr-video" playsinline style="margin-top:14px;display:none;width:100%;"></video>
+        <canvas id="qr-canvas" style="display:none;"></canvas>
+
+        <div id="qr-result-wrap" style="margin-top:14px;display:none;">
+          <label>Decoded content</label>
+          <div class="copy-row">
+            <input id="qr-result" class="input" readonly />
+            <button id="qr-copy" class="btn btn-accent">Copy</button>
+          </div>
+        </div>
+        <p id="qr-status" class="strength-label" style="margin-top:10px;">Waiting for input…</p>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

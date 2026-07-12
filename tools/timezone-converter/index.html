@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timezone Converter — FreeToolsHub</title>
+  <meta name="description" content="Pick a time and see it across multiple timezones." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Timezone Converter</h1>
+      <p>Pick a source time and see it across your chosen timezones.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="row">
+          <div class="field">
+            <label for="tz-date">Source date &amp; time</label>
+            <input id="tz-date" class="input" type="datetime-local" />
+          </div>
+          <div class="field">
+            <label for="tz-source">Source timezone</label>
+            <select id="tz-source" class="select"></select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="tz-add">Add timezone</label>
+          <div class="copy-row">
+            <select id="tz-add" class="select"></select>
+            <button id="tz-add-btn" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+
+        <div id="tz-list" style="margin-top:14px;"></div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

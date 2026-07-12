@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Generator — FreeToolsHub</title>
+  <meta name="description" content="Generate strong, customizable passwords with a live strength meter." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Password Generator</h1>
+      <p>Create strong random passwords. Everything runs locally in your browser.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="copy-row">
+          <input id="pw-out" class="input" readonly />
+          <button id="pw-copy" class="btn btn-accent">Copy</button>
+        </div>
+
+        <div class="strength-bar"><div id="pw-bar" class="strength-bar__fill"></div></div>
+        <div id="pw-strength" class="strength-label">Strength: —</div>
+
+        <div class="field" style="margin-top:16px;">
+          <label for="pw-length">Length: <span id="pw-length-val">16</span></label>
+          <input id="pw-length" type="range" min="4" max="64" value="16" style="width:100%;" />
+        </div>
+
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="pw-upper" checked /> Uppercase (A-Z)</label>
+          <label><input type="checkbox" id="pw-lower" checked /> Lowercase (a-z)</label>
+          <label><input type="checkbox" id="pw-num" checked /> Numbers (0-9)</label>
+          <label><input type="checkbox" id="pw-sym" /> Symbols (!@#…)</label>
+        </div>
+
+        <div class="actions" style="margin-top:16px;">
+          <button id="pw-gen" class="btn btn-primary">Generate password</button>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

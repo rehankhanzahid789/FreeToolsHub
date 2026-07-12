@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Color Picker — FreeToolsHub</title>
+  <meta name="description" content="Pick colors and copy HEX, RGB and HSL values instantly." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Color Picker</h1>
+      <p>Pick a color and copy its HEX, RGB or HSL value.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div id="cp-swatch" class="color-swatch"></div>
+        <div class="field">
+          <label for="cp-input">Choose a color</label>
+          <input id="cp-input" class="input" type="color" value="#6CA6CD" style="height:52px;padding:4px;" />
+        </div>
+
+        <div class="field">
+          <label>HEX</label>
+          <div class="copy-row">
+            <input id="cp-hex" class="input" readonly />
+            <button class="btn btn-accent" data-copy="cp-hex">Copy</button>
+          </div>
+        </div>
+        <div class="field">
+          <label>RGB</label>
+          <div class="copy-row">
+            <input id="cp-rgb" class="input" readonly />
+            <button class="btn btn-accent" data-copy="cp-rgb">Copy</button>
+          </div>
+        </div>
+        <div class="field">
+          <label>HSL</label>
+          <div class="copy-row">
+            <input id="cp-hsl" class="input" readonly />
+            <button class="btn btn-accent" data-copy="cp-hsl">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  { "name": "QR Code Generator", "slug": "qr-generator", "description": "Generate downloadable QR codes from text or URLs.", "icon": "qr-generator.svg", "folder": "tools/qr-generator/" },
+  { "name": "QR Code Reader", "slug": "qr-reader", "description": "Decode QR codes from an image or your webcam.", "icon": "qr-reader.svg", "folder": "tools/qr-reader/" },
+  { "name": "Password Generator", "slug": "password-generator", "description": "Create strong, customizable passwords with a live strength meter.", "icon": "password-generator.svg", "folder": "tools/password-generator/" },
+  { "name": "Color Picker", "slug": "color-picker", "description": "Pick colors and copy HEX, RGB, or HSL values instantly.", "icon": "color-picker.svg", "folder": "tools/color-picker/" },
+  { "name": "Unit Converter", "slug": "unit-converter", "description": "Convert length, weight, and temperature units.", "icon": "unit-converter.svg", "folder": "tools/unit-converter/" },
+  { "name": "Timezone Converter", "slug": "timezone-converter", "description": "See a time across multiple timezones side by side.", "icon": "timezone-converter.svg", "folder": "tools/timezone-converter/" },
+  { "name": "Word Counter", "slug": "word-counter", "description": "Live word, character, sentence and reading-time counts.", "icon": "word-counter.svg", "folder": "tools/word-counter/" },
+  { "name": "Base64 Encoder/Decoder", "slug": "base64-tool", "description": "Encode or decode text with Base64.", "icon": "base64-tool.svg", "folder": "tools/base64-tool/" },
+  { "name": "JSON Formatter", "slug": "json-formatter", "description": "Pretty-print and validate JSON with error highlighting.", "icon": "json-formatter.svg", "folder": "tools/json-formatter/" },
+  { "name": "Case Converter", "slug": "case-converter", "description": "Convert text between UPPER, lower, Title, camel and snake case.", "icon": "case-converter.svg", "folder": "tools/case-converter/" }
+]

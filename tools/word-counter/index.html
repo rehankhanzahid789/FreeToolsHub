@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word Counter — FreeToolsHub</title>
+  <meta name="description" content="Live word, character, sentence and reading time counts." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Word Counter</h1>
+      <p>Paste or type text — counts update live.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="wc-input">Text</label>
+          <textarea id="wc-input" class="textarea" placeholder="Start typing…" style="min-height:220px;"></textarea>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><div id="wc-words" class="stat__value">0</div><div class="stat__label">Words</div></div>
+          <div class="stat"><div id="wc-chars" class="stat__value">0</div><div class="stat__label">Characters</div></div>
+          <div class="stat"><div id="wc-chars-ns" class="stat__value">0</div><div class="stat__label">No spaces</div></div>
+          <div class="stat"><div id="wc-sent" class="stat__value">0</div><div class="stat__label">Sentences</div></div>
+          <div class="stat"><div id="wc-read" class="stat__value">0m</div><div class="stat__label">Reading</div></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="script.js"></script>
+</body>
+</html>
