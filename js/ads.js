@@ -12,11 +12,16 @@
    <script src="...invoke.js"></script> line) into the matching `code`
    field below as a single string, and set enabled to true.
 
-   One code maps to one slot: top / sidebar / bottom.
-   Adsterra banners are fixed-pixel, not responsive — the `width`
-   field below must match the `width` in that code's atOptions so the
-   scaling wrapper can shrink it to fit narrow screens without it
-   overflowing or getting cut off.
+   IMPORTANT: every Adsterra "atOptions" ad code uses the SAME global
+   variable name (atOptions). Running several on one page back-to-back
+   makes each one silently overwrite the last one's config — so we
+   load each ad inside its own isolated <iframe>, giving each one its
+   own separate window.atOptions with no possibility of collision.
+
+   One code maps to one slot: top / sidebar / bottom. Adsterra banners
+   are fixed-pixel, not responsive — `width`/`height` below must match
+   the ones in that code's atOptions so it can scale to fit narrow
+   screens without overflowing or getting cut off.
    ===================================================================== */
 
 window.ADS_CONFIG = {
@@ -81,62 +86,63 @@ window.ADS_CONFIG = {
 
 /* ---- injector — you shouldn't need to edit anything below this line ---- */
 (function () {
-  function runScriptsIn(container) {
-    // innerHTML-inserted <script> tags don't execute automatically,
-    // so we clone and replace each one to force execution.
-    container.querySelectorAll("script").forEach(function (oldScript) {
-      var newScript = document.createElement("script");
-      for (var i = 0; i < oldScript.attributes.length; i++) {
-        var attr = oldScript.attributes[i];
-        newScript.setAttribute(attr.name, attr.value);
-      }
-      newScript.textContent = oldScript.textContent;
-      oldScript.parentNode.replaceChild(newScript, oldScript);
-    });
+  // Each ad is loaded inside its own iframe via srcdoc, giving it a
+  // completely separate window/global scope. This is the officially
+  // documented fix for Adsterra's shared-atOptions collision when
+  // running multiple ad units on one page.
+  function injectIsolated(slotEl, cfg) {
+    var outer = document.createElement("div");
+    outer.style.width = "100%";
+    outer.style.display = "flex";
+    outer.style.justifyContent = "center";
+
+    var iframe = document.createElement("iframe");
+    iframe.title = "Advertisement";
+    iframe.style.border = "none";
+    iframe.style.display = "block";
+    iframe.style.transformOrigin = "top center";
+    iframe.setAttribute("scrolling", "no");
+    iframe.width = cfg.width;
+    iframe.height = cfg.height;
+
+    var doc = "<!DOCTYPE html><html><head><style>*{margin:0;padding:0;}</style></head><body>" + cfg.code + "</body></html>";
+
+    outer.appendChild(iframe);
+    slotEl.innerHTML = "";
+    slotEl.appendChild(outer);
+
+    if ("srcdoc" in iframe) {
+      iframe.srcdoc = doc;
+    } else {
+      var idoc = iframe.contentWindow.document;
+      idoc.open();
+      idoc.write(doc);
+      idoc.close();
+    }
+
+    function rescale() {
+      var available = slotEl.clientWidth || outer.clientWidth;
+      var scale = Math.min(1, available / cfg.width);
+      iframe.style.transform = "scale(" + scale + ")";
+      outer.style.height = (cfg.height * scale) + "px";
+    }
+
+    rescale();
+    window.addEventListener("resize", rescale);
   }
 
-  // Adsterra banners render at a fixed pixel size. On a narrow screen a
-  // 728px-wide banner would either overflow or get clipped. Instead we
-  // wrap the ad in a box sized exactly to its real dimensions, then
-  // CSS-scale that whole box down to fit the slot's actual width —
-  // the ad still renders normally, it just displays smaller.
-  function injectScaled(selector, cfgKey) {
+  function inject(selector, cfgKey) {
     var cfg = window.ADS_CONFIG[cfgKey];
     if (!cfg || !cfg.enabled || !cfg.code || !cfg.code.trim()) return;
-
     document.querySelectorAll(selector).forEach(function (slot) {
-      var outer = document.createElement("div");
-      outer.style.width = "100%";
-      outer.style.display = "flex";
-      outer.style.justifyContent = "center";
-
-      var scaleBox = document.createElement("div");
-      scaleBox.style.width = cfg.width + "px";
-      scaleBox.style.height = cfg.height + "px";
-      scaleBox.style.transformOrigin = "top center";
-      scaleBox.innerHTML = cfg.code;
-
-      outer.appendChild(scaleBox);
-      slot.innerHTML = "";
-      slot.appendChild(outer);
-      runScriptsIn(scaleBox);
-
-      function rescale() {
-        var available = slot.clientWidth || outer.clientWidth;
-        var scale = Math.min(1, available / cfg.width);
-        scaleBox.style.transform = "scale(" + scale + ")";
-        outer.style.height = (cfg.height * scale) + "px";
-      }
-
-      rescale();
-      window.addEventListener("resize", rescale);
+      injectIsolated(slot, cfg);
     });
   }
 
   function init() {
-    injectScaled(".ad-slot--top", "top");
-    injectScaled(".ad-slot--sidebar", "sidebar");
-    injectScaled(".ad-slot--bottom", "bottom");
+    inject(".ad-slot--top", "top");
+    inject(".ad-slot--sidebar", "sidebar");
+    inject(".ad-slot--bottom", "bottom");
   }
 
   if (document.readyState === "loading") {
