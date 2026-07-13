@@ -14,11 +14,32 @@
     "folder": "tools/base64-tool/"
   },
   {
+    "name": "BMI Calculator",
+    "slug": "bmi-calculator",
+    "description": "Calculate Body Mass Index from height and weight.",
+    "icon": "bmi-calculator.svg",
+    "folder": "tools/bmi-calculator/"
+  },
+  {
+    "name": "Box Shadow Generator",
+    "slug": "box-shadow-generator",
+    "description": "Design a CSS box-shadow visually and copy the code.",
+    "icon": "box-shadow-generator.svg",
+    "folder": "tools/box-shadow-generator/"
+  },
+  {
     "name": "Case Converter",
     "slug": "case-converter",
     "description": "Convert text between UPPER, lower, Title, camel and snake case.",
     "icon": "case-converter.svg",
     "folder": "tools/case-converter/"
+  },
+  {
+    "name": "Color Palette Generator",
+    "slug": "color-palette-generator",
+    "description": "Generate complementary, analogous and triadic color palettes.",
+    "icon": "color-palette-generator.svg",
+    "folder": "tools/color-palette-generator/"
   },
   {
     "name": "Color Picker",
@@ -28,6 +49,13 @@
     "folder": "tools/color-picker/"
   },
   {
+    "name": "CSS Gradient Generator",
+    "slug": "css-gradient-generator",
+    "description": "Design a linear or radial CSS gradient visually.",
+    "icon": "css-gradient-generator.svg",
+    "folder": "tools/css-gradient-generator/"
+  },
+  {
     "name": "CSV to JSON Converter",
     "slug": "csv-to-json",
     "description": "Convert CSV data with a header row into a JSON array.",
@@ -35,11 +63,25 @@
     "folder": "tools/csv-to-json/"
   },
   {
+    "name": "Discount Calculator",
+    "slug": "discount-calculator",
+    "description": "Calculate final price and savings from a discount percentage.",
+    "icon": "discount-calculator.svg",
+    "folder": "tools/discount-calculator/"
+  },
+  {
     "name": "Hash Generator",
     "slug": "hash-generator",
     "description": "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from text.",
     "icon": "hash-generator.svg",
     "folder": "tools/hash-generator/"
+  },
+  {
+    "name": "HTML Entity Encoder / Decoder",
+    "slug": "html-entity-encoder",
+    "description": "Escape or unescape HTML entities instantly.",
+    "icon": "html-entity-encoder.svg",
+    "folder": "tools/html-entity-encoder/"
   },
   {
     "name": "JSON Formatter",
@@ -54,6 +96,13 @@
     "description": "Decode a JSON Web Token's header and payload.",
     "icon": "jwt-decoder.svg",
     "folder": "tools/jwt-decoder/"
+  },
+  {
+    "name": "Loan / EMI Calculator",
+    "slug": "loan-calculator",
+    "description": "Calculate monthly loan payment, interest and total repayment.",
+    "icon": "loan-calculator.svg",
+    "folder": "tools/loan-calculator/"
   },
   {
     "name": "Lorem Ipsum Generator",
@@ -77,6 +126,13 @@
     "folder": "tools/password-generator/"
   },
   {
+    "name": "Percentage Calculator",
+    "slug": "percentage-calculator",
+    "description": "Calculate percentages, percentage change and more.",
+    "icon": "percentage-calculator.svg",
+    "folder": "tools/percentage-calculator/"
+  },
+  {
     "name": "QR Code Generator",
     "slug": "qr-generator",
     "description": "Generate downloadable QR codes from text or URLs.",
@@ -91,11 +147,25 @@
     "folder": "tools/qr-reader/"
   },
   {
+    "name": "Random Number & Item Picker",
+    "slug": "random-picker",
+    "description": "Generate a random number in a range or pick from your own list.",
+    "icon": "random-picker.svg",
+    "folder": "tools/random-picker/"
+  },
+  {
     "name": "Regex Tester",
     "slug": "regex-tester",
     "description": "Test regular expressions with live match highlighting.",
     "icon": "regex-tester.svg",
     "folder": "tools/regex-tester/"
+  },
+  {
+    "name": "Slug Generator",
+    "slug": "slug-generator",
+    "description": "Convert titles and text into clean, URL-friendly slugs.",
+    "icon": "slug-generator.svg",
+    "folder": "tools/slug-generator/"
   },
   {
     "name": "Text Diff Checker",

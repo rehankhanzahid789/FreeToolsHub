@@ -13,7 +13,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/bmi-calculator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/box-shadow-generator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/case-converter/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/color-palette-generator/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -21,11 +33,23 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/css-gradient-generator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/csv-to-json/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/discount-calculator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/hash-generator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/html-entity-encoder/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -34,6 +58,10 @@
   </url>
   <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/jwt-decoder/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/loan-calculator/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -49,6 +77,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/percentage-calculator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/qr-generator/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -57,7 +89,15 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/random-picker/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/regex-tester/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/slug-generator/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Color Palette Generator — FreeToolsHub</title>
+  <meta name="description" content="Generate complementary, analogous and triadic color palettes from any base color." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/color-palette-generator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Color Palette Generator — FreeToolsHub" />
+  <meta property="og:description" content="Generate complementary, analogous and triadic color palettes from any base color." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/color-palette-generator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Color Palette Generator — FreeToolsHub" />
+  <meta name="twitter:description" content="Generate complementary, analogous and triadic color palettes from any base color." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+  <style>
+    .cp-group { margin-bottom: 18px; }
+    .cp-group h3 { font-size: 0.95rem; color: var(--color-primary-dark); margin-bottom: 8px; }
+    .cp-swatches { display:flex; flex-wrap:wrap; gap:10px; }
+    .cp-swatch { width:100px; border-radius:8px; overflow:hidden; border:1px solid var(--color-border); cursor:pointer; }
+    .cp-swatch__color { height:70px; }
+    .cp-swatch__label { font-family:ui-monospace,monospace; font-size:0.75rem; text-align:center; padding:6px 4px; background:#fff; }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Color Palette Generator</h1>
+      <p>Pick a base color to generate complementary, analogous, triadic and shade palettes. Click a swatch to copy its hex code.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="cp-base">Base color</label>
+          <input id="cp-base" class="input" type="color" value="#1c7ed6" style="height:44px;padding:4px;" />
+        </div>
+
+        <div class="cp-group">
+          <h3>Shades</h3>
+          <div id="cp-shades" class="cp-swatches"></div>
+        </div>
+        <div class="cp-group">
+          <h3>Complementary</h3>
+          <div id="cp-complementary" class="cp-swatches"></div>
+        </div>
+        <div class="cp-group">
+          <h3>Analogous</h3>
+          <div id="cp-analogous" class="cp-swatches"></div>
+        </div>
+        <div class="cp-group">
+          <h3>Triadic</h3>
+          <div id="cp-triadic" class="cp-swatches"></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

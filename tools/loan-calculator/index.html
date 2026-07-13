@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loan / EMI Calculator — FreeToolsHub</title>
+  <meta name="description" content="Calculate your monthly loan payment (EMI), total interest and total repayment amount." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/loan-calculator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Loan / EMI Calculator — FreeToolsHub" />
+  <meta property="og:description" content="Calculate your monthly loan payment (EMI), total interest and total repayment amount." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/loan-calculator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Loan / EMI Calculator — FreeToolsHub" />
+  <meta name="twitter:description" content="Calculate your monthly loan payment (EMI), total interest and total repayment amount." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Loan / EMI Calculator</h1>
+      <p>Enter the loan amount, interest rate and term to see your monthly payment and total cost.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="row">
+          <div class="field">
+            <label for="lc-principal">Loan amount</label>
+            <input id="lc-principal" class="input" type="number" min="0" step="0.01" placeholder="e.g. 20000" />
+          </div>
+          <div class="field">
+            <label for="lc-rate">Annual interest rate (%)</label>
+            <input id="lc-rate" class="input" type="number" min="0" step="0.01" placeholder="e.g. 7.5" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="lc-term">Loan term</label>
+            <input id="lc-term" class="input" type="number" min="1" step="1" placeholder="e.g. 5" />
+          </div>
+          <div class="field">
+            <label for="lc-term-unit">Term unit</label>
+            <select id="lc-term-unit" class="select">
+              <option value="years">Years</option>
+              <option value="months">Months</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="lc-error" class="error-box" hidden></div>
+
+        <div class="stat-grid">
+          <div class="stat"><div id="lc-payment" class="stat__value">—</div><div class="stat__label">Monthly payment</div></div>
+          <div class="stat"><div id="lc-total-interest" class="stat__value">—</div><div class="stat__label">Total interest</div></div>
+          <div class="stat"><div id="lc-total-paid" class="stat__value">—</div><div class="stat__label">Total repayment</div></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

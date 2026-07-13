@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Box Shadow Generator — FreeToolsHub</title>
+  <meta name="description" content="Design a CSS box-shadow visually with sliders and copy the generated code." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/box-shadow-generator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Box Shadow Generator — FreeToolsHub" />
+  <meta property="og:description" content="Design a CSS box-shadow visually with sliders and copy the generated code." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/box-shadow-generator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Box Shadow Generator — FreeToolsHub" />
+  <meta name="twitter:description" content="Design a CSS box-shadow visually with sliders and copy the generated code." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+  <style>
+    .bs-preview-wrap { background:#F1F7FB; border-radius:12px; padding:40px; display:flex; align-items:center; justify-content:center; min-height:220px; }
+    .bs-preview-box { width:140px; height:100px; background:#fff; border-radius:12px; }
+    .bs-row { display:flex; align-items:center; gap:12px; }
+    .bs-row input[type="range"] { flex:1; }
+    .bs-row span { min-width:52px; text-align:right; font-family:ui-monospace,monospace; font-size:0.85rem; color:var(--color-text-muted); }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Box Shadow Generator</h1>
+      <p>Adjust the sliders to design a shadow, then copy the CSS.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel" style="grid-column: 1 / -1;">
+        <div class="bs-preview-wrap">
+          <div id="bs-box" class="bs-preview-box"></div>
+        </div>
+
+        <div class="row" style="margin-top:16px;">
+          <div class="field">
+            <label>Horizontal offset</label>
+            <div class="bs-row"><input id="bs-x" type="range" min="-50" max="50" value="0" /><span id="bs-x-val">0px</span></div>
+          </div>
+          <div class="field">
+            <label>Vertical offset</label>
+            <div class="bs-row"><input id="bs-y" type="range" min="-50" max="50" value="10" /><span id="bs-y-val">10px</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Blur radius</label>
+            <div class="bs-row"><input id="bs-blur" type="range" min="0" max="100" value="20" /><span id="bs-blur-val">20px</span></div>
+          </div>
+          <div class="field">
+            <label>Spread radius</label>
+            <div class="bs-row"><input id="bs-spread" type="range" min="-50" max="50" value="0" /><span id="bs-spread-val">0px</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="bs-color">Shadow color</label>
+            <input id="bs-color" class="input" type="color" value="#1c3d5a" style="height:44px;padding:4px;" />
+          </div>
+          <div class="field">
+            <label>Opacity</label>
+            <div class="bs-row"><input id="bs-opacity" type="range" min="0" max="100" value="30" /><span id="bs-opacity-val">30%</span></div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="checkbox-row" style="font-weight:600;color:var(--color-primary-dark);">
+            <input type="checkbox" id="bs-inset" />
+            Inset shadow
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="bs-copy" class="btn btn-accent" type="button">Copy CSS</button>
+        </div>
+        <div class="field">
+          <label>CSS</label>
+          <textarea id="bs-output" class="textarea" readonly style="min-height:70px;"></textarea>
+        </div>
+      </section>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

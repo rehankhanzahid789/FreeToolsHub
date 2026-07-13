@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slug Generator — FreeToolsHub</title>
+  <meta name="description" content="Convert titles and text into clean, URL-friendly slugs instantly." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/slug-generator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Slug Generator — FreeToolsHub" />
+  <meta property="og:description" content="Convert titles and text into clean, URL-friendly slugs instantly." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/slug-generator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Slug Generator — FreeToolsHub" />
+  <meta name="twitter:description" content="Convert titles and text into clean, URL-friendly slugs instantly." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Slug Generator</h1>
+      <p>Turn a title or sentence into a clean, lowercase, URL-friendly slug.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="sg-input">Text</label>
+          <textarea id="sg-input" class="textarea" placeholder="e.g. My Blog Post, Part 2!" style="min-height:100px;"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="sg-separator">Separator</label>
+          <select id="sg-separator" class="select">
+            <option value="-">Hyphen ( - )</option>
+            <option value="_">Underscore ( _ )</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="checkbox-row" style="font-weight:600;color:var(--color-primary-dark);">
+            <input type="checkbox" id="sg-lowercase" checked />
+            Force lowercase
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="sg-copy" class="btn btn-accent" type="button">Copy slug</button>
+        </div>
+
+        <div class="field">
+          <label>Slug</label>
+          <input id="sg-output" class="input" type="text" readonly />
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

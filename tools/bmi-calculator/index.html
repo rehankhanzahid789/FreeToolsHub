@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BMI Calculator — FreeToolsHub</title>
+  <meta name="description" content="Calculate your Body Mass Index (BMI) from height and weight, with metric and imperial units." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/bmi-calculator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="BMI Calculator — FreeToolsHub" />
+  <meta property="og:description" content="Calculate your Body Mass Index (BMI) from height and weight, with metric and imperial units." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/bmi-calculator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="BMI Calculator — FreeToolsHub" />
+  <meta name="twitter:description" content="Calculate your Body Mass Index (BMI) from height and weight, with metric and imperial units." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>BMI Calculator</h1>
+      <p>Work out your Body Mass Index from height and weight, in metric or imperial units.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="bmi-units">Units</label>
+          <select id="bmi-units" class="select">
+            <option value="metric">Metric (kg, cm)</option>
+            <option value="imperial">Imperial (lb, in)</option>
+          </select>
+        </div>
+
+        <div id="bmi-metric-fields" class="row">
+          <div class="field">
+            <label for="bmi-weight-kg">Weight (kg)</label>
+            <input id="bmi-weight-kg" class="input" type="number" min="0" step="0.1" placeholder="e.g. 70" />
+          </div>
+          <div class="field">
+            <label for="bmi-height-cm">Height (cm)</label>
+            <input id="bmi-height-cm" class="input" type="number" min="0" step="0.1" placeholder="e.g. 175" />
+          </div>
+        </div>
+
+        <div id="bmi-imperial-fields" class="row" hidden>
+          <div class="field">
+            <label for="bmi-weight-lb">Weight (lb)</label>
+            <input id="bmi-weight-lb" class="input" type="number" min="0" step="0.1" placeholder="e.g. 154" />
+          </div>
+          <div class="field">
+            <label for="bmi-height-in">Height (in)</label>
+            <input id="bmi-height-in" class="input" type="number" min="0" step="0.1" placeholder="e.g. 69" />
+          </div>
+        </div>
+
+        <div id="bmi-error" class="error-box" hidden></div>
+
+        <div class="stat-grid">
+          <div class="stat"><div id="bmi-value" class="stat__value">—</div><div class="stat__label">BMI</div></div>
+          <div class="stat"><div id="bmi-category" class="stat__value">—</div><div class="stat__label">Category</div></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

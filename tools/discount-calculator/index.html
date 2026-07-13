@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discount Calculator — FreeToolsHub</title>
+  <meta name="description" content="Calculate the final price and savings from an original price and discount percentage." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/discount-calculator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Discount Calculator — FreeToolsHub" />
+  <meta property="og:description" content="Calculate the final price and savings from an original price and discount percentage." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/discount-calculator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Discount Calculator — FreeToolsHub" />
+  <meta name="twitter:description" content="Calculate the final price and savings from an original price and discount percentage." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Discount Calculator</h1>
+      <p>Enter an original price and discount to see the final price and how much you save.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="row">
+          <div class="field">
+            <label for="dc-price">Original price</label>
+            <input id="dc-price" class="input" type="number" min="0" step="0.01" placeholder="e.g. 100" />
+          </div>
+          <div class="field">
+            <label for="dc-percent">Discount %</label>
+            <input id="dc-percent" class="input" type="number" min="0" max="100" step="0.1" placeholder="e.g. 25" />
+          </div>
+        </div>
+
+        <div id="dc-error" class="error-box" hidden></div>
+
+        <div class="stat-grid">
+          <div class="stat"><div id="dc-final" class="stat__value">—</div><div class="stat__label">Final price</div></div>
+          <div class="stat"><div id="dc-saved" class="stat__value">—</div><div class="stat__label">You save</div></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
