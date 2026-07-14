@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UUID Generator — FreeToolsHub</title>
   <meta name="description" content="Generate one or many random UUID v4 identifiers instantly." />
@@ -83,6 +92,7 @@
   </main>
 
   <div id="site-footer"></div>
+  <script src="../../js/theme.js"></script>
   <script src="../../js/layout.js" data-root="../../"></script>
   <script src="../../js/ads.js"></script>
   <script src="script.js"></script>
