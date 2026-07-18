@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support FreeToolsHub</title>
+  <meta name="description" content="FreeToolsHub is built and maintained by one person. Here's how you can support the project." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/support/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Support FreeToolsHub" />
+  <meta property="og:description" content="FreeToolsHub is built and maintained by one person. Here's how you can support the project." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/support/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Support FreeToolsHub" />
+  <meta name="twitter:description" content="FreeToolsHub is built and maintained by one person. Here's how you can support the project." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/tool.css" />
+  <style>
+    .sp-hero { text-align:center; max-width:640px; margin:0 auto 8px; }
+    .sp-hero h1 { margin-bottom:10px; }
+    .sp-hero p { color:var(--color-text-muted); }
+    .sp-section { margin-bottom:22px; }
+    .sp-section h2 { font-size:1.15rem; color:var(--color-heading); margin-bottom:6px; }
+    .sp-section p { color:var(--color-text-muted); margin-top:0; }
+    .sp-easypaisa-box { display:flex; align-items:center; justify-content:space-between; gap:12px; background:var(--color-tint-bg); border:1px solid var(--color-primary-light); border-radius:10px; padding:16px; flex-wrap:wrap; }
+    .sp-easypaisa-box div { font-family: ui-monospace, monospace; font-size:1.05rem; font-weight:700; color:var(--color-heading); }
+    .sp-supporters { display:flex; flex-wrap:wrap; gap:8px; }
+    .sp-supporter-chip { background:var(--color-primary-light); color:var(--color-heading); padding:6px 12px; border-radius:999px; font-size:0.88rem; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container" style="max-width:760px;">
+    <div class="sp-hero" style="margin-top:34px;">
+      <h1>Support FreeToolsHub</h1>
+      <p>
+        I built and maintain every tool on this site by myself, in my spare time — no team, no company,
+        just one person coding, testing and fixing bugs after hours. Everything stays free and clutter-free
+        because of that. If a tool here saved you time, here are a few ways you can help keep it going.
+      </p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <section class="sp-section tool-card-panel">
+      <h2>Request a tool</h2>
+      <p>
+        Got an idea for a tool you'd like added to the site? Just message me with your idea on Fiverr —
+        if it's possible, I'll build it for $5.
+      </p>
+      <div class="actions">
+        <a class="btn btn-accent" href="https://www.fiverr.com/s/42P9yR1" target="_blank" rel="noopener noreferrer">Message me on Fiverr →</a>
+      </div>
+    </section>
+    <!-- ============================================================ -->
+
+    <section class="sp-section tool-card-panel">
+      <h2>Support directly with Easypaisa (Pakistan)</h2>
+      <p>The simplest way to support from Pakistan — send any amount, no account or sign-up needed on your end.</p>
+      <div class="sp-easypaisa-box">
+        <div>
+          <div style="font-size:0.75rem;font-weight:600;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.5px;">Account name</div>
+          Rehan Zahid
+        </div>
+        <div>
+          <div style="font-size:0.75rem;font-weight:600;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.5px;">Easypaisa number</div>
+          <span id="sp-easypaisa-number">0335-8477448</span>
+        </div>
+        <button id="sp-copy-number" class="btn btn-outline" type="button">Copy number</button>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- EDIT ME: add a chip for each supporter's name here as people -->
+    <!-- let you know they've supported the project. Just copy a line.-->
+    <!-- ============================================================ -->
+    <section class="sp-section tool-card-panel">
+      <h2>Supporters</h2>
+      <p>With thanks to everyone who has supported FreeToolsHub:</p>
+      <div class="sp-supporters" id="sp-supporters-list">
+        <span class="sp-supporter-chip">Your name could be here</span>
+      </div>
+    </section>
+    <!-- ============================================================ -->
+
+    <div class="actions" style="justify-content:center;margin-top:8px;">
+      <a class="btn btn-outline" href="../index.html">← Back to all tools</a>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../js/theme.js"></script>
+  <script src="../js/layout.js" data-root="../"></script>
+  <script src="../js/ads.js"></script>
+  <script>
+    document.getElementById("sp-copy-number").addEventListener("click", function () {
+      var num = document.getElementById("sp-easypaisa-number").textContent.trim();
+      navigator.clipboard.writeText(num).then(function () {
+        var btn = document.getElementById("sp-copy-number");
+        var orig = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(function () { btn.textContent = orig; }, 1200);
+      });
+    });
+  </script>
+</body>
+</html>
