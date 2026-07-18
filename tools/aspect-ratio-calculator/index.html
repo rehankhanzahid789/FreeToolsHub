@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aspect Ratio Calculator — FreeToolsHub</title>
+  <meta name="description" content="Calculate a missing width or height from an aspect ratio, or find the ratio between two dimensions." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/aspect-ratio-calculator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Aspect Ratio Calculator — FreeToolsHub" />
+  <meta property="og:description" content="Calculate a missing width or height from an aspect ratio, or find the ratio between two dimensions." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/aspect-ratio-calculator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Aspect Ratio Calculator — FreeToolsHub" />
+  <meta name="twitter:description" content="Calculate a missing width or height from an aspect ratio, or find the ratio between two dimensions." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Aspect Ratio Calculator</h1>
+      <p>Find a missing width or height that keeps a target aspect ratio, or work out the ratio between two dimensions.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label style="font-weight:700;color:var(--color-primary-dark);">Scale to a new size</label>
+          <div class="row">
+            <div class="field"><label for="ar-orig-w">Original width</label><input id="ar-orig-w" class="input" type="number" min="0" step="any" placeholder="e.g. 1920" /></div>
+            <div class="field"><label for="ar-orig-h">Original height</label><input id="ar-orig-h" class="input" type="number" min="0" step="any" placeholder="e.g. 1080" /></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="ar-new-w">New width</label><input id="ar-new-w" class="input" type="number" min="0" step="any" placeholder="Leave blank to calculate" /></div>
+            <div class="field"><label for="ar-new-h">New height</label><input id="ar-new-h" class="input" type="number" min="0" step="any" placeholder="Leave blank to calculate" /></div>
+          </div>
+          <div class="result-box" id="ar-result">Enter an original size and one new dimension.</div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid var(--color-border);margin:20px 0;" />
+
+        <div class="field">
+          <label style="font-weight:700;color:var(--color-primary-dark);">Common ratios</label>
+          <div class="row" style="flex-wrap:wrap;">
+            <button class="btn btn-outline" type="button" data-ratio="16:9">16:9</button>
+            <button class="btn btn-outline" type="button" data-ratio="4:3">4:3</button>
+            <button class="btn btn-outline" type="button" data-ratio="1:1">1:1</button>
+            <button class="btn btn-outline" type="button" data-ratio="21:9">21:9</button>
+            <button class="btn btn-outline" type="button" data-ratio="9:16">9:16</button>
+            <button class="btn btn-outline" type="button" data-ratio="3:2">3:2</button>
+          </div>
+          <p style="color:var(--color-text-muted);font-size:0.85rem;">Click a ratio to fill the original size fields (based on a 1000px wide reference), then adjust as needed.</p>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

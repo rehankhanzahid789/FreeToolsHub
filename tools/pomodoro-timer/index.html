@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pomodoro Timer — FreeToolsHub</title>
+  <meta name="description" content="A focus timer using the Pomodoro Technique, with configurable work and break lengths." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/pomodoro-timer/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Pomodoro Timer — FreeToolsHub" />
+  <meta property="og:description" content="A focus timer using the Pomodoro Technique, with configurable work and break lengths." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/pomodoro-timer/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pomodoro Timer — FreeToolsHub" />
+  <meta name="twitter:description" content="A focus timer using the Pomodoro Technique, with configurable work and break lengths." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+
+  <style>
+    .pm-display { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: clamp(2.8rem, 10vw, 4.2rem); font-weight: 800; color: var(--color-heading); text-align: center; padding: 20px 0 8px; }
+    .pm-phase { text-align:center; font-weight:700; letter-spacing:1px; text-transform:uppercase; font-size:0.85rem; color: var(--color-text-muted); }
+    .pm-ring-wrap { display:flex; justify-content:center; margin:10px 0; }
+    .pm-sessions { text-align:center; color:var(--color-text-muted); font-size:0.9rem; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Pomodoro Timer</h1>
+      <p>Work in focused sprints with automatic short and long breaks.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel" style="grid-column: 1 / -1; max-width:520px; margin:0 auto;">
+        <div class="pm-phase" id="pm-phase">Focus</div>
+        <div class="pm-display" id="pm-display">25:00</div>
+        <div class="pm-sessions" id="pm-sessions">Session 1 · 0 completed</div>
+
+        <div class="actions" style="justify-content:center;">
+          <button id="pm-start" class="btn btn-accent" type="button">Start</button>
+          <button id="pm-pause" class="btn btn-outline" type="button" disabled>Pause</button>
+          <button id="pm-reset" class="btn btn-outline" type="button">Reset</button>
+          <button id="pm-skip" class="btn btn-outline" type="button">Skip</button>
+        </div>
+
+        <hr style="border:none;border-top:1px solid var(--color-border);margin:22px 0;" />
+
+        <div class="row">
+          <div class="field">
+            <label for="pm-work">Focus (minutes)</label>
+            <input id="pm-work" class="input" type="number" min="1" value="25" />
+          </div>
+          <div class="field">
+            <label for="pm-short">Short break (minutes)</label>
+            <input id="pm-short" class="input" type="number" min="1" value="5" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="pm-long">Long break (minutes)</label>
+            <input id="pm-long" class="input" type="number" min="1" value="15" />
+          </div>
+          <div class="field">
+            <label for="pm-cycles">Focus sessions before long break</label>
+            <input id="pm-cycles" class="input" type="number" min="1" value="4" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

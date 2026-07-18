@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Character Limit Counter — FreeToolsHub</title>
+  <meta name="description" content="Check character counts against Twitter/X, Instagram, Facebook, YouTube and other platform limits." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/character-limit-counter/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Character Limit Counter — FreeToolsHub" />
+  <meta property="og:description" content="Check character counts against Twitter/X, Instagram, Facebook, YouTube and other platform limits." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/character-limit-counter/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Character Limit Counter — FreeToolsHub" />
+  <meta name="twitter:description" content="Check character counts against Twitter/X, Instagram, Facebook, YouTube and other platform limits." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+
+  <style>
+    .cl-bar-track { height:8px; background:var(--color-track-bg); border-radius:999px; overflow:hidden; margin-top:6px; }
+    .cl-bar-fill { height:100%; background:var(--color-primary); transition:width .15s, background .15s; }
+    .cl-bar-fill.over { background: var(--color-danger); }
+    .cl-platform { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--color-border); }
+    .cl-platform:last-child { border-bottom:none; }
+    .cl-platform__name { font-weight:600; color:var(--color-heading); font-size:0.92rem; }
+    .cl-platform__count { font-family:ui-monospace,monospace; font-size:0.85rem; color:var(--color-text-muted); }
+    .cl-platform__count.over { color:var(--color-danger); font-weight:700; }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Character Limit Counter</h1>
+      <p>Type or paste your text and see how it measures up against common platform character limits.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="cl-input">Text</label>
+          <textarea id="cl-input" class="textarea" placeholder="Start typing…" style="min-height:160px;"></textarea>
+        </div>
+        <div id="cl-platforms"></div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

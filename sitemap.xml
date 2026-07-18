@@ -9,6 +9,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/aspect-ratio-calculator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/base64-tool/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -22,6 +26,10 @@
   </url>
   <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/case-converter/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/character-limit-counter/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -53,6 +61,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/invoice-generator/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/json-formatter/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -81,6 +93,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/pomodoro-timer/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/qr-generator/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -93,6 +109,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/readability-checker/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/regex-tester/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -101,11 +121,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/stopwatch-timer/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/text-diff-checker/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/timezone-converter/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rehankhanzahid789.github.io/FreeToolsHub/tools/tip-calculator/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>

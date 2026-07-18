@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stopwatch & Timer — FreeToolsHub</title>
+  <meta name="description" content="A simple online stopwatch with laps, and a countdown timer with alarm." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/stopwatch-timer/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Stopwatch & Timer — FreeToolsHub" />
+  <meta property="og:description" content="A simple online stopwatch with laps, and a countdown timer with alarm." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/stopwatch-timer/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Stopwatch & Timer — FreeToolsHub" />
+  <meta name="twitter:description" content="A simple online stopwatch with laps, and a countdown timer with alarm." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+
+  <style>
+    .sw-display { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: clamp(2.4rem, 8vw, 3.6rem); font-weight: 700; color: var(--color-heading); text-align: center; padding: 24px 0; }
+    .sw-tabs { display:flex; gap:8px; margin-bottom:16px; }
+    .sw-tab { flex:1; padding:10px; text-align:center; border-radius:8px; border:1px solid var(--color-border); background:var(--color-surface); cursor:pointer; font-weight:600; color:var(--color-text-muted); }
+    .sw-tab.active { background:var(--color-primary-light); color:var(--color-heading); border-color: var(--color-primary); }
+    .sw-laps { max-height:220px; overflow-y:auto; margin-top:14px; }
+    .sw-lap { display:flex; justify-content:space-between; padding:8px 12px; border-bottom:1px solid var(--color-border); font-family: ui-monospace, monospace; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Stopwatch & Timer</h1>
+      <p>Use the stopwatch to track elapsed time with laps, or set a countdown timer with an alarm.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel" style="grid-column: 1 / -1; max-width:560px; margin:0 auto;">
+        <div class="sw-tabs">
+          <div id="sw-tab-stopwatch" class="sw-tab active">Stopwatch</div>
+          <div id="sw-tab-timer" class="sw-tab">Timer</div>
+        </div>
+
+        <div id="sw-stopwatch-panel">
+          <div id="sw-display" class="sw-display">00:00:00.00</div>
+          <div class="actions" style="justify-content:center;">
+            <button id="sw-start" class="btn btn-accent" type="button">Start</button>
+            <button id="sw-lap" class="btn btn-outline" type="button" disabled>Lap</button>
+            <button id="sw-reset" class="btn btn-outline" type="button">Reset</button>
+          </div>
+          <div id="sw-laps" class="sw-laps"></div>
+        </div>
+
+        <div id="sw-timer-panel" hidden>
+          <div class="row">
+            <div class="field"><label for="tm-h">Hours</label><input id="tm-h" class="input" type="number" min="0" value="0" /></div>
+            <div class="field"><label for="tm-m">Minutes</label><input id="tm-m" class="input" type="number" min="0" max="59" value="5" /></div>
+            <div class="field"><label for="tm-s">Seconds</label><input id="tm-s" class="input" type="number" min="0" max="59" value="0" /></div>
+          </div>
+          <div id="tm-display" class="sw-display">00:05:00</div>
+          <div class="actions" style="justify-content:center;">
+            <button id="tm-start" class="btn btn-accent" type="button">Start</button>
+            <button id="tm-pause" class="btn btn-outline" type="button" disabled>Pause</button>
+            <button id="tm-reset" class="btn btn-outline" type="button">Reset</button>
+          </div>
+          <p id="tm-status" style="text-align:center;color:var(--color-text-muted);"></p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

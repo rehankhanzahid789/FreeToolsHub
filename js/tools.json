@@ -7,6 +7,13 @@
     "folder": "tools/age-calculator/"
   },
   {
+    "name": "Aspect Ratio Calculator",
+    "slug": "aspect-ratio-calculator",
+    "description": "Calculate a missing width or height from an aspect ratio.",
+    "icon": "aspect-ratio-calculator.svg",
+    "folder": "tools/aspect-ratio-calculator/"
+  },
+  {
     "name": "Base64 Encoder/Decoder",
     "slug": "base64-tool",
     "description": "Encode or decode text with Base64.",
@@ -33,6 +40,13 @@
     "description": "Convert text between UPPER, lower, Title, camel and snake case.",
     "icon": "case-converter.svg",
     "folder": "tools/case-converter/"
+  },
+  {
+    "name": "Character Limit Counter",
+    "slug": "character-limit-counter",
+    "description": "Check character counts against social media and SEO limits.",
+    "icon": "character-limit-counter.svg",
+    "folder": "tools/character-limit-counter/"
   },
   {
     "name": "Color Palette Generator",
@@ -84,6 +98,13 @@
     "folder": "tools/html-entity-encoder/"
   },
   {
+    "name": "Invoice Generator",
+    "slug": "invoice-generator",
+    "description": "Create a professional invoice and print or save it as a PDF.",
+    "icon": "invoice-generator.svg",
+    "folder": "tools/invoice-generator/"
+  },
+  {
     "name": "JSON Formatter",
     "slug": "json-formatter",
     "description": "Pretty-print and validate JSON with error highlighting.",
@@ -133,6 +154,13 @@
     "folder": "tools/percentage-calculator/"
   },
   {
+    "name": "Pomodoro Timer",
+    "slug": "pomodoro-timer",
+    "description": "A focus timer with configurable work and break lengths.",
+    "icon": "pomodoro-timer.svg",
+    "folder": "tools/pomodoro-timer/"
+  },
+  {
     "name": "QR Code Generator",
     "slug": "qr-generator",
     "description": "Generate downloadable QR codes from text or URLs.",
@@ -154,6 +182,13 @@
     "folder": "tools/random-picker/"
   },
   {
+    "name": "Readability Score Checker",
+    "slug": "readability-checker",
+    "description": "Check the Flesch Reading Ease and Grade Level of your text.",
+    "icon": "readability-checker.svg",
+    "folder": "tools/readability-checker/"
+  },
+  {
     "name": "Regex Tester",
     "slug": "regex-tester",
     "description": "Test regular expressions with live match highlighting.",
@@ -168,6 +203,13 @@
     "folder": "tools/slug-generator/"
   },
   {
+    "name": "Stopwatch & Timer",
+    "slug": "stopwatch-timer",
+    "description": "An online stopwatch with laps, and a countdown timer with alarm.",
+    "icon": "stopwatch-timer.svg",
+    "folder": "tools/stopwatch-timer/"
+  },
+  {
     "name": "Text Diff Checker",
     "slug": "text-diff-checker",
     "description": "Compare two blocks of text with line-by-line highlighting.",
@@ -180,6 +222,13 @@
     "description": "See a time across multiple timezones side by side.",
     "icon": "timezone-converter.svg",
     "folder": "tools/timezone-converter/"
+  },
+  {
+    "name": "Tip Calculator",
+    "slug": "tip-calculator",
+    "description": "Calculate tip amount and split the bill between people.",
+    "icon": "tip-calculator.svg",
+    "folder": "tools/tip-calculator/"
   },
   {
     "name": "Unit Converter",

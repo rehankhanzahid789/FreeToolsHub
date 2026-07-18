@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("ftg-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tip Calculator — FreeToolsHub</title>
+  <meta name="description" content="Calculate tip amount and split the bill between any number of people." />
+  <link rel="canonical" href="https://rehankhanzahid789.github.io/FreeToolsHub/tools/tip-calculator/index.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeToolsHub" />
+  <meta property="og:title" content="Tip Calculator — FreeToolsHub" />
+  <meta property="og:description" content="Calculate tip amount and split the bill between any number of people." />
+  <meta property="og:url" content="https://rehankhanzahid789.github.io/FreeToolsHub/tools/tip-calculator/index.html" />
+  <meta property="og:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tip Calculator — FreeToolsHub" />
+  <meta name="twitter:description" content="Calculate tip amount and split the bill between any number of people." />
+  <meta name="twitter:image" content="https://rehankhanzahid789.github.io/FreeToolsHub/assets/brand/logo-512.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/logo-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/logo-180.png" />
+  <link rel="shortcut icon" href="../../assets/brand/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="tool-header">
+      <a class="back-link" href="../../index.html">← All tools</a>
+      <h1>Tip Calculator</h1>
+      <p>Enter the bill, choose a tip percentage, and split it between however many people you like.</p>
+    </div>
+
+    <!-- Adsterra: paste banner ad code below this comment -->
+    <div class="ad-slot ad-slot--top" aria-label="Advertisement"></div>
+
+    <div class="tool-layout">
+      <section class="tool-card-panel">
+        <div class="field">
+          <label for="tip-bill">Bill amount</label>
+          <input id="tip-bill" class="input" type="number" min="0" step="0.01" placeholder="e.g. 84.50" />
+        </div>
+
+        <div class="field">
+          <label for="tip-percent">Tip percentage</label>
+          <div class="row" style="align-items:center;">
+            <input id="tip-percent" type="range" min="0" max="50" value="15" style="flex:1;" />
+            <span id="tip-percent-val" style="min-width:48px;text-align:right;font-weight:700;color:var(--color-heading);">15%</span>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-outline" type="button" data-tip="10">10%</button>
+          <button class="btn btn-outline" type="button" data-tip="15">15%</button>
+          <button class="btn btn-outline" type="button" data-tip="18">18%</button>
+          <button class="btn btn-outline" type="button" data-tip="20">20%</button>
+          <button class="btn btn-outline" type="button" data-tip="25">25%</button>
+        </div>
+
+        <div class="field">
+          <label for="tip-people">Split between how many people</label>
+          <input id="tip-people" class="input" type="number" min="1" step="1" value="1" />
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat"><div id="tip-amount" class="stat__value">—</div><div class="stat__label">Tip amount</div></div>
+          <div class="stat"><div id="tip-total" class="stat__value">—</div><div class="stat__label">Total bill</div></div>
+          <div class="stat"><div id="tip-per-person" class="stat__value">—</div><div class="stat__label">Per person</div></div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Adsterra: paste sidebar/native ad code below this comment -->
+        <div class="ad-slot ad-slot--sidebar" aria-label="Advertisement"></div>
+      </aside>
+    </div>
+
+    <!-- Adsterra: paste bottom banner ad code below this comment -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Advertisement"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/layout.js" data-root="../../"></script>
+  <script src="../../js/ads.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
