@@ -271,4 +271,5 @@ img, svg { max-width: 100%; display: block; }
 @media (max-width: 720px) {
   .site-nav a { margin-left: 12px; font-size: 0.9rem; }
   .hero { padding: 36px 0 20px; }
+  .hero .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 10px; }
 }
